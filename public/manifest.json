@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Louis Vuitton Product Identifier",
+  "version": "1.0",
+  "description": "Identifies products on louisvuitton.com and displays their properties",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.louisvuitton.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
